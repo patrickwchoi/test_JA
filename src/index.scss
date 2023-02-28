@@ -1,0 +1,144 @@
+// CSS Entry File
+//SCSS lets you visually nest selectors more easily
+//will get converted into main css
+// @import './styles/reset.css';
+
+*{
+	margin: 0;
+	padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#dialoguebox{
+	background-color: lightblue;
+	height: 140px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 4px white solid;
+	display: flex;
+
+  button{
+    height: 50px;
+  }
+}
+#dialogueButtons{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    background-color: #4b90e4;
+    border: 1px solid #042261;
+  }
+}
+#spaceforalldialoguetext{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+#dialoguetext{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* CSS */
+button {
+  display: flex;
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-color: darkslategrey;
+}
+
+.beforeMenuContent:hover { //need to change to buttons, not all content
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .beforeMenuContent {
+    padding: 10px 30px;
+  }
+}
+
+
+#beforeMenu{
+  background-color: rgb(156, 235, 156);
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#beforeMenu *{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 2px;
+}
+#spaceforalldialoguetext{
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+}
+.divider {
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+  margin: 5px
+}
+
+
+#spaceforalldialoguetext *{
+  background-color: #a3c7eb;
+  border: 5px ;
+  border-color: darkslategrey;
+
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+}
+
+#instructions{
+  padding: 15px;
+}
+body{
+  display: flex; 
+}
+.backButton{
+  background-color: #345f2f;
+  top:0;
+}
+
+.hidden{
+  display: none !important;
+
+}

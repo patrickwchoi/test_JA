@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./dist/main.css" />
+  <script src="./dist/main.js" type="application/javascript" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PokeValley</title>
+</head>
+
+<body>
+  <div id="left">
+    <h1>Pokemon</h1>
+    <canvas id="canvas" height="600" width="900"> </canvas>
+    <div id="dialoguebox">
+      <div id="dialogueAnnouncement" class="hidden"></div>
+      <div id="spaceforalldialoguetext">
+        <div id="dialoguetext" class="dialogueContent"></div>
+        <!-- <span class="divider"></span> -->
+        <div id="dialoguetext2" ></div>
+      </div>
+      <div id="dialogueButtons">
+        <button id="option1" class="dialogueOption hidden">option 1</button>
+        <button id="option2" class="dialogueOption hidden">option 2</button>
+      </div>
+      <img src="./assets/bagon_face.png" class="hidden" id="bagon_face" height="100px" width="100px">
+
+    </div>
+  </div>
+
+  <div id="beforeMenu" > 
+    <ul><button id="menuButton" class="beforeMenuContent" > <i class="fa fa-bars"></i>  Menu</button></ul>
+    <ul><button id="instructionsButton" class="beforeMenuContent" >Instructions</button></ul>
+    <ul><button id="backToBeforeMenu" class="beforeMenuContent hidden backButton" >Back</button></ul>
+    <div id="instructions" class="instructions hidden">
+      Instructions: As a member of Team Rocket, you find yourself lost and separated from your crew after being blasted into space yet again. When you wake up, you find a friendly Bagon by your side. You realize that if you evolve this Bagon, you can use them to fly back home! 
+      <br>
+      GOAL: Evolve Bagon by finding ways to increase your friendship level! You can check friendship level with the pokedex on the menu.
+      <br>
+      Controls: Use WASD to move, use your mouse to interact with things on screen.
+    </div>
+  
+    <div id="menu">
+      <button id="backToMenuButton" class="hidden backButton">Back To Menu</button>
+      <button id="mapButton" class="menuContent hidden"> Map</button>
+      <div id="mapContent" class="hidden">
+        <h2>Map</h2>
+        <img src="./assets/tilemap8_clean_img.png" class="map" id="map" height="300px" width="400px">
+      </div>
+
+      <button id="pokedexButton" class="menuContent hidden"> Pokedex </button>
+      <div id="pokedexContent" class="hidden">
+        <img src="./assets/bagon_face.png" id="bagon_face_pokedex" height="50px" width="50px">
+      </div>
+
+    </div>
+  </div>
+  
+</body>
+</html>
+
+
