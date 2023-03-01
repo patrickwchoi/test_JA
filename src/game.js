@@ -1,10 +1,10 @@
-const collisions = require("./collisions.js");
-const Sprite = require("./sprite.js");
-const Player = require("./player.js");
-const Boundary = require("./boundary.js");
+const collisions = require("./Map/collisions.js");
+const Sprite = require("./Sprites/sprite.js");
+const Player = require("./Sprites/player.js");
+const Boundary = require("./Map/boundary.js");
 const Utils = require("./utils.js");
-const Pokemon = require("./pokemon.js");
-const Item = require("./item.js");
+const Pokemon = require("./Sprites/pokemon.js");
+const Item = require("./Sprites/item.js");
 
 //Create Variables
 const dialogueBox = document.querySelector('#dialoguebox');
