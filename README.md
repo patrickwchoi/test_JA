@@ -1,3 +1,6 @@
+<h1>THIS IS FOR FIXING GITHUB ISSUE. I WILL BUILD THIS FROM GROUND UP AGAIN</h1>
+
+
 <h2>Patrick's Pokemon Game (name will be updated)</h2>
 
 Link: https://patrickwchoi.github.io/javascript_project_AA/ 
